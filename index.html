@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta rel="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Timer-style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js"></script>
+</head>
+<body class="text-center">
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <a class="navbar-brand" href="#">Guess The Number</a>
+    </nav>
+    <div class="counter">
+        <p id="countdown">00:30</p>
+    <div class="options">
+        <button type="button"  id="start" class="btn btn-primary">start</button>
+        <button type="button" id="stop"  class="btn btn-danger">stop</button>
+    </div>
+    </div>
+    <script src="timer1.js"></script>
+    <main>
+        <h1 id="banner">#1-100</h1>
+        <div class="form-group">
+            <input onkeypress="enterAfterKeypress(event)" id="number-guess" onfocus="myFunction(this)" class="form-control form-control-lg" type="number" placeholder="What's your guess?">
+            <script>
+                function myFunction(x) {
+                  x.style.background = "rgb(223, 193, 96)";
+                }
+                </script>
+        </div>
+        <div id="result">
+            <!-- This is where the result will be-->
+        </div class="begin">
+        <button type="button" id="number-submit"  class="btn btn-lg btn-success">Check Me</button>
+        <button type="button" id="restart-game" class="btn btn-lg btn-danger">Restart</button>
+        <div id="history">
+            <!-- This is where the guess history will be-->
+        </div>
+    </main>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--
+    class="btn btn-primary btn-lg active" role="button" aria-pressed="true"
+-->
