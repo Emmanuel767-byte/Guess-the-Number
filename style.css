@@ -61,37 +61,38 @@ margin: 1.3em;
 .container{
   box-sizing: inherit;  
 }
+/*MAKE IT MOBILE FRIENDLY*/
+@media screen and (min-width: 736px) and (max-width:1024px) {
 
-@media screen and (max-width: 1000px){
-    body{
-        width: 100%;
+    body .text-center{
+        position: relative;
     }
-  main{
-      width: 100%;
-  }
-  .counter{
-      width: 80%;
-  }
+    * html{
+        background-size: cover;
+        background-position: center;
+    }
+    main{
+        position: absolute;
+        top: 38%;
+        left: -9%;
+        width: 60%; 
+        height: 452px;
+        justify-self: center;
+    
 }
-@media screen and (max-width: 640px){
-    body{
-        width: 639%;
-    }
-  main{
-      width: 100%;
-  }
-  .counter{
-      width: 60%;
-  }
+
+
+.navbar-brand{
+    position: absolute;
+    left:  41%;
+    top: 5pxs;
 }
-@media screen and (max-width: 320px){
-    body{
-        width: 320px;
-    }
-  main{
-      width: 100%;
-  }
-  .counter{
-      width: 60%;
-  }
+.counter{
+position: absolute;
+left: 33%;
+
+}
+nav  {
+    height: 50px;
+}
 }
