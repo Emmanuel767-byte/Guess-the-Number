@@ -4,11 +4,15 @@
     border: #FFD23F;
 }
 
-* html{
+ body {
     background-image: url("1080p dice roll.jpg");
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+   
+}
+
+ html{
+    margin:0 auto;
+    padding: 0 auto;
+    
 }
 li.list-group-item{
     background-color: #FFD23F;
