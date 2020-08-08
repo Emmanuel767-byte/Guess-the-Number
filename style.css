@@ -62,7 +62,7 @@ margin: 1.3em;
   box-sizing: inherit;  
 }
 /*MAKE IT MOBILE FRIENDLY*/
-@media screen and (min-width: 736px) and (max-width:1024px) {
+@media screen and (min-width: 400px) and (max-width:1024px) {
 
     body .text-center{
         position: relative;
