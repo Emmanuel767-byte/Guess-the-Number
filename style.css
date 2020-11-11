@@ -1,102 +1,126 @@
-#number-guess, #result, #history {
+#number-guess,
+#result,
+#history {
     max-width: 400px;
     margin: 0 auto;
-    border: #FFD23F;
+    border: #ffd23f;
 }
 
- body {
+body {
     background-image: url("1080p dice roll.jpg");
-   
-}
-
- html{
-    margin:0 auto;
+    overflow: hidden;
+    margin: 0 auto;
     padding: 0 auto;
     
+    
 }
-li.list-group-item{
-    background-color: #FFD23F;
-    border: #FFD23F;
+
+
+
+html {
+    margin: 0 auto;
+    padding: 0 auto;
+    overflow: hidden;
+}
+
+li.list-group-item {
+    background-color: #ffd23f;
+    border: #8d8879;
     color: black;
     font-weight: 500%;
     font-size: 1.2em;
     text-transform: capitalize;
 }
+
 #history {
     margin-top: 16px;
 }
-p#countdown{
-    font-family: 'Orbitron', sans-serif;
+
+p#countdown {
+    font-family: "Orbitron", sans-serif;
     font-size: 5rem;
     display: inline-flex;
 }
-.form-group{
-max-width: 400px;
-margin: 0 auto;
-}
 
-main{
-    margin-top: -17.5em;
-    margin-left: 35%;
-    max-width: 500px;
+.form-group {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.body-content{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+main {
+    /* margin-top: -17.5em;
+    margin-left: 35%; */
+   
+    width:fit-content;
     padding-left: 2em;
     padding-right: 2em;
-    border: solid darkgreen ;
+    border: solid darkgreen;
     border-width: 20px;
     border-style: groove;
-    }
+}
 
-#banner{
-    color: #FFD23F;
+#banner {
+    color: #ffd23f;
     font-size: 110px;
     font-family: sans-serif;
 }
-.begin, #number-submit, #restart-game{
-margin: 2em;
-justify-content: space-evenly;
-align-items: center;
-display: inline-flex;
 
+.begin,
+#number-submit,
+#restart-game {
+    margin: 2em;
+    justify-content: space-evenly;
+    align-items: center;
+    display: inline-flex;
 }
-#number-submit, #restart-game{
-height: 40px;
-margin: 1.3em;
-}
-.container{
-  box-sizing: inherit;  
-}
-/*MAKE IT MOBILE FRIENDLY*/
-@media screen and (min-width: 400px) and (max-width:1024px) {
 
-    body .text-center{
-        position: relative;
+#number-submit,
+#restart-game {
+    height: 40px;
+    margin: 1.3em;
+}
+
+/*MAKE IT TABLET FRIENDLY*/
+@media screen and (max-width: 999px) and (min-width: 669px) {
+    .body-center {
+       
+        
     }
-    * html{
-        background-size: cover;
-        background-position: center;
-    }
-    main{
-        position: absolute;
-        top: 38%;
-        left: -9%;
-        width: 60%; 
-        height: 452px;
-        justify-self: center;
+
+    main {
     
+    }
+
+ 
+
+   
+
+    nav {
+        height: 50px;
+    }
 }
 
+/*MAKE IT MOBILE FRIENDLY*/
+@media screen and (max-width: 668px) and (min-width: 370px) {
+    .body-center {
+        
+    }
 
-.navbar-brand{
-    position: absolute;
-    left:  41%;
-    top: 5pxs;
-}
-.counter{
-position: absolute;
-left: 33%;
+    main {
+    
+    }
 
-}
-nav  {
-    height: 50px;
-}
+    .navbar-brand {
+        
+    }
+
+
+
+    nav {
+        height: 50px;
+    }
 }
