@@ -1,7 +1,6 @@
 *{
     margin:0;
-    padding: 0;
-    box-sizing: border-box;
+   
     font-family: 'Orbitron', sans-serif;
 }
 p{
@@ -21,7 +20,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 0.5em;
-    margin-right: 90%;
+    
     border-color: darkgreen;
     
     border-style: groove;
@@ -44,7 +43,7 @@ body{
     border-width: 5x;
     border-style: double, inset;
     height: 98px;
-    width: 358px;
+    width: 95%;
     align-items: center;
     display: inline-flex;
 }
@@ -57,3 +56,29 @@ body{
     justify-content: space-evenly;
 }
 
+
+
+@media screen and (max-width: 1080px) and (min-width: 669px){
+
+    .counter,
+    #countdown,
+    .options
+    {
+        justify-content: center;
+    }
+    
+    .options{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 668px) and (min-width: 370px){
+
+    .counter,
+    #countdown,
+    .options
+    {
+        justify-content: center;
+        width: 95%;
+    }
+
+}
