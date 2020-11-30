@@ -58,7 +58,7 @@ body{
 
 
 
-@media screen and (max-width: 1080px) and (min-width: 669px){
+@media screen and (max-width: 1080px) and (min-width: 769px){
 
     .counter,
     #countdown,
@@ -67,18 +67,17 @@ body{
         justify-content: center;
     }
     
-    .options{
-        width: 95%;
-    }
+    
 }
-@media screen and (max-width: 668px) and (min-width: 370px){
+@media screen and (max-width: 768px) and (min-width: 320px){
 
     .counter,
     #countdown,
     .options
     {
         justify-content: center;
-        width: 95%;
+        width: 82%;
+        height: min-content;
     }
 
 }
