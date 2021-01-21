@@ -10,7 +10,9 @@ html,body {
    
     font-family: 'Montserrat', sans-serif;
     background-image: url("1080p dice roll.jpg");
-    
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
     
 }
@@ -105,7 +107,7 @@ main {
     html,body {
    
         font-family: 'Montserrat', sans-serif;
-        background-image: url("1080p-dice-roll.jpg");
+        background-image: url("1080p dice-roll.jpg");
         -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
